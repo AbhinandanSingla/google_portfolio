@@ -1,0 +1,64 @@
+.page {
+    display: flex;
+    margin-top: 5rem;
+
+    /*margin-top: 4rem;*/
+}
+
+.page .col_1 {
+    width: 65%;
+    padding-right: 2rem;
+    border-right: 1px solid #dfdfdf;
+}
+
+.page .col_2 {
+    padding-left: 2rem;
+    width: 35%;
+    height: 30vh;
+}
+
+.page .col_2 .aboutus .heading {
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: var(--google_sans);
+}
+
+.experience_card {
+}
+
+.experience_card .top_container {
+    display: flex;
+}
+
+.experience_card .top_container img {
+    width: 3rem;
+}
+
+.experience_card .heading_container {
+    margin-left: 1rem;
+}
+
+.experience_card .card_heading {
+    padding: 0.5rem 0;
+    font-size: 2.3rem;
+    font-weight: 550;
+    font-family: var(--google_sans);
+    color: #1a73e8;
+}
+
+.experience_card .top_container .main_heading {
+    font-size: 1.5rem;
+    font-family: var(--google_sans);
+
+}
+
+.experience_card .card_content {
+    font-size: 1.5rem;
+    font-family: var(--arial);
+}
+
+.experience_card .time_container {
+    font-size: 1rem;
+    color: #5f6368;
+    padding: 1.5rem 0;
+}
