@@ -1,8 +1,6 @@
 .page {
     display: flex;
     margin-top: 5rem;
-
-    /*margin-top: 4rem;*/
 }
 
 .page .col_1 {
@@ -11,7 +9,7 @@
 
 .experience_container {
     padding-right: 2rem;
-    border-right: 1px solid #dfdfdf;
+    border-right: 1px solid var(--lines);
 }
 
 .page .col_2 {
@@ -24,8 +22,9 @@
     font-size: 3rem;
     font-weight: 500;
     font-family: var(--google_sans);
-    border-bottom: 1px solid #dfdfdf;
+    border-bottom: 1px solid var(--lines);
     padding-bottom: 1rem;
+    color: var(--main_heading);
 }
 
 .experience_card {
@@ -49,24 +48,34 @@
     font-size: 2.3rem;
     font-weight: 550;
     font-family: var(--google_sans);
-    color: #1a73e8;
+    color: var(--experience_heading);
 }
 
 .experience_card .top_container .main_heading {
     font-size: 1.5rem;
     font-family: var(--google_sans);
+    color: var(--main_heading);
+}
 
+.experience_card .top_container .sub_heading {
+    font-size: 1rem;
+    font-family: var(--google_sans);
+    color: var(--sub_heading);
 }
 
 .experience_card .card_content {
     font-size: 1.5rem;
-    font-family: var(--google_sans);
+    font-family: var(--roboto);
+    font-weight: 300;
+    color: var(--main_heading);
+    font-style: normal;
 }
 
 .experience_card .time_container {
     font-size: 1rem;
-    color: #5f6368;
+    color: var(--main_heading);
     padding: 1.5rem 0;
+    font-family: var(--poppins);
 }
 
 .about_container {
@@ -81,14 +90,15 @@
     padding: 0.5rem 1px;
     font-size: 1.6rem;
     font-family: var(--google_sans);
-    font-weight: 800;
+    font-weight: 400;
     justify-content: left;
+    color: var(--main_heading);
 }
 
 .about_container .row .cell_value {
     padding-left: 1rem;
     font-size: 1.3rem;
-    color: #5f6368;
+    color: var(--cell_value);
     font-weight: 500;
     width: 30rem;
 }
@@ -110,6 +120,7 @@
     font-size: 3rem;
     font-weight: 500;
     font-family: var(--google_sans);
+    color: var(--main_heading);
 }
 
 .projects .heading_container .sub_heading,
@@ -117,7 +128,7 @@
 .achievement .heading_container .sub_heading {
     font-size: 1.5rem;
     font-weight: 400;
-    color: #5f6368;
+    color: var(--sub_heading);
     font-family: var(--google_sans);
     padding: 0.4rem 0;
 }
@@ -125,7 +136,7 @@
 .projects .heading_container,
 .research_works .heading_container,
 .achievement .heading_container {
-    border-bottom: 1px solid #dfdfdf;
+    border-bottom: 1px solid var(--lines);
     padding-bottom: 0.7rem;
 }
 
@@ -145,7 +156,7 @@
 
 .project1 {
     grid-area: 1 / 1 / 3 / 2;
-    border-right: 1px solid #dfdfdf;
+    border-right: 1px solid var(--lines);
     padding: 1rem;
 }
 
@@ -156,16 +167,22 @@
 .project_container .project_heading {
     font-size: 2rem;
     padding-bottom: 1rem;
+    color: var(--experience_heading);
+    font-family: var(--google_sans);
 }
 
 .project_container .project_description {
     font-size: 1.5rem;
+    font-family: var(--roboto);
+    font-weight: 300;
+    font-style: normal;
+    color: var(--main_heading);
 }
 
 .project2 {
     margin: 1rem;
     grid-area: 1 / 2 / 2 / 3;
-    border-bottom: 1px solid #dfdfdf;
+    border-bottom: 1px solid var(--lines);
     padding-bottom: 1rem;
 }
 
@@ -181,7 +198,7 @@
 .more .more_line {
     width: 100%;
     height: 1px;
-    border-bottom: 1px solid #dfdfdf;
+    border-bottom: 1px solid var(--lines);
     padding-bottom: 1rem;
     margin-bottom: 6rem;
 }
@@ -228,14 +245,21 @@
 .achievement .achievement_container .achievement_heading {
     font-size: 2rem;
     font-weight: 500;
+    color: var(--experience_heading);
+    font-family: var(--google_sans);
 }
 
 .achievement .achievement_container .achievement_description {
     padding: 2rem 2rem 1rem 0;
-    font-size: 1.8rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: var(--roboto);
+    color: var(--main_heading);
 }
 
 .achievement_sub_heading {
     font-size: 1rem;
+    color: var(--sub_heading);
+    font-family: var(--poppins);
+    font-weight: 300;
 }

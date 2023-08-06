@@ -4,12 +4,15 @@
 }
 
 .top_header .max_width {
+    background: var(--main_bg);
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    top: 0;
     align-items: center;
-    margin-top: 2.3rem;
     padding: 0 5rem;
+    padding-top: 2.3rem;
 
 }
 
@@ -43,12 +46,14 @@
 }
 
 .top_header .setting_icon {
+    cursor: pointer;
     width: 24px;
     margin: 0 1rem;
 }
 
 .top_header .user_icon {
-    width: 40px;
+    cursor: pointer;
+    width: 35px;
     margin: 0 1rem;
 }
 
@@ -60,7 +65,7 @@
 
 .top_header .connect_bar {
     display: flex;
-    margin-top: 3rem;
+    margin-top: 10rem;
     padding-left: 20rem;
     gap: 3rem;
     align-items: center;
@@ -112,6 +117,7 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 1rem;
     border: 1px solid #5f6368;
+    transition: all 1s ease-in;
 }
 
 .button_container {

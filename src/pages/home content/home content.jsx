@@ -74,7 +74,12 @@ export const Overview = () => {
                                 </div>
                                 <div className="sub_heading">24 years</div>
                             </div>
-                            <div className="tr2"></div>
+                            <div className="tr2">
+                                <div className="main_heading ">
+                                    Star Project
+                                </div>
+                                <div className="sub_heading">Farma-Help</div>
+                            </div>
                             <div className="tr3"></div>
                         </div>
                     </div>

@@ -35,7 +35,7 @@ export const Page = () => {
             profile_icon: jp,
             profile_heading: "JPMORGAN",
             profile_sub_heading: 'https://www.jpmorganchase.com',
-            experience_name: "Software Developer Intern",
+            experience_name: "Software Engineering Virtual Experience program",
             experience_description: "A Virtual Experience of the Software Engineering Field and how it is to work with JPMorgan Chase Co. Tasks Included: 1. Establishing Financial data feeds. 2. Front-End web development 3.Data Visualization with Perspective.",
             place_and_time: "Remote | Mar 2023 to Mar 2023"
         },
@@ -103,8 +103,7 @@ export const Page = () => {
             'Languages',
         'value': 'C,Java,Python,Dart,Javascript,Solidity',
     }, {
-        'title': 'Frameworks/\n' +
-            'Technologies   ',
+        'title': 'Frameworks/\nTechnologies   ',
         'value': 'Mongodb, ExpressJs, ReactJs, NodeJs, jQuery, SQL, Flutter, Springboot, Graphql, Deep-Learning, Machine-learning, NLP, Blockchain.\n',
     }, {
         'title': 'Others',
@@ -191,7 +190,7 @@ export const Page = () => {
                             Research Works
                         </div>
                         <div className="sub_heading">
-                            showing Results for Research works
+                            Showing Results for Research works
                         </div>
                     </div>
                     {research.map((v, index) => <div className="experience_card">
@@ -220,7 +219,7 @@ export const Page = () => {
                             Achievement
                         </div>
                         <div className="sub_heading">
-                            showing Results for Research works
+                            Showing Results for Achievement
                         </div>
                     </div>
                     {achievements.map((v, index) => {

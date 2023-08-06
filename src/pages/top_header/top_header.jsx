@@ -10,11 +10,12 @@ import {
     Twitter_icon,
     User_icon
 } from "./svg_exporter";
-import {useContext} from "react";
+import {useContext, useState} from "react";
 import {DarkModeContext} from "../../DarkMode";
 
 export const Top_header = () => {
     const [darkMode, setDarkMode] = useContext(DarkModeContext);
+    const [darkBtn, setDarkBtn] = useState(false);
     return (<>
             <div className="top_header">
                 <div className="max_width">
@@ -28,28 +29,31 @@ export const Top_header = () => {
                     </div>
                     <div className="settings center">
                         <figure className="setting_icon">
-                            <Setting_icon color={darkMode ? 'white' : 'black'}/>
-                            <div className={darkMode ? "setting_box dark_enabled" : "setting_box"}>
-                                {
-                                    darkMode ?
-                                        <div className="button_container">
+                            <Setting_icon onClick={() => setDarkBtn(!darkBtn)} color={darkMode ? 'white' : 'black'}/>
+                            {
+                                darkBtn ? <div className={darkMode ? "setting_box dark_enabled" : "setting_box"}>
+                                        {
+                                            darkMode ?
+                                                <div className="button_container">
                                     <span>
                                         Light Color
                                     </span>
-                                            <div className={"button_ball"}>
-                                                <Sun_icon onClick={() => setDarkMode(!darkMode)}/>
-                                            </div>
-                                        </div> :
-                                        <div className="button_container">
+                                                    <div className={"button_ball"}>
+                                                        <Sun_icon onClick={() => setDarkMode(!darkMode)}/>
+                                                    </div>
+                                                </div> :
+                                                <div className="button_container">
                                     <span>
                                         Dark Color
                                     </span>
-                                            <div className={"button_ball"}>
-                                                <Moon_icon onClick={() => setDarkMode(!darkMode)}/>
-                                            </div>
-                                        </div>
-                                }
-                            </div>
+                                                    <div className={"button_ball"}>
+                                                        <Moon_icon onClick={() => setDarkMode(!darkMode)}/>
+                                                    </div>
+                                                </div>
+                                        }
+                                    </div>
+                                    : null
+                            }
                         </figure>
                         <figure className="setting_icon">
                             <Menu_icon color={darkMode ? 'white' : "black"}/>

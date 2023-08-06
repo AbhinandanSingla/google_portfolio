@@ -158,12 +158,13 @@
     grid-row-gap: 20px;
 }
 
-.home_content .tr1 .sub_heading {
-    font-size: 2.5rem;
+.home_content .right_container .sub_heading {
+    font-size: 2rem;
     text-align: center;
     font-family: var(--google_sans);
     margin-top: auto;
     padding: 2rem;
+    color: var(--main_heading);
 }
 
 .tr2 {
@@ -172,6 +173,9 @@
     border-radius: 20px;
     grid-area: 1 / 2 / 2 / 3;
     transition: all 1s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
@@ -202,17 +206,21 @@
     padding-top: 3px;
     padding-bottom: 6px;
     line-height: 20px;
+    color: var(--linkedin);
 }
 
-.home_content .right_container .tr1 .main_heading {
+.home_content .right_container .main_heading {
     padding-top: 1.5rem;
     padding-left: 1.5rem;
     font-size: 1.5rem;
     font-family: var(--google_sans);
+    color: var(--main_heading);
     font-weight: 600;
 }
 
 .home_content .m_content {
+    color: var(--cell_value);
+    font-family: var(--google_sans);
     font-size: 12px;
     line-height: 16px;
 }
