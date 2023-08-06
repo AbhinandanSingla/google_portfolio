@@ -14,7 +14,7 @@ html {
 
 .light_theme {
     --input_bar: #fff;
-    --input_text: #000;
+    --input_text: rgba(0, 0, 0, 0.87);
     --main_bg: #fff;
     --lines: #dfdfdf;
     --connect_nav: #5f6368;
