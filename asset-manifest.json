@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.85ec6137.css",
+    "main.js": "/static/js/main.1bfe86bf.js",
+    "static/media/Rectangle 4.png": "/static/media/Rectangle 4.3a349a9f7eed5a616b54.png",
+    "static/media/Rectangle 21.png": "/static/media/Rectangle 21.aa1727f60e8e9dfb0efb.png",
+    "static/media/Rectangle 20.png": "/static/media/Rectangle 20.2eea86c04526dd0a5fb9.png",
+    "static/media/Rectangle 11.png": "/static/media/Rectangle 11.b1c657f1af81a0d433c1.png",
+    "static/media/Rectangle 6.png": "/static/media/Rectangle 6.c1dfafa5d46202c64728.png",
+    "static/media/Rectangle 5.png": "/static/media/Rectangle 5.67e8326ef7dd23d354aa.png",
+    "static/media/Arialn.ttf": "/static/media/Arialn.421ef31efd8c95f0a46e.ttf",
+    "static/media/ProductSans-Regular.woff": "/static/media/ProductSans-Regular.0a489488ab3cb2eb11f9.woff",
+    "static/media/ProductSans-BoldItalic.woff": "/static/media/ProductSans-BoldItalic.0d6403dc3af35281bccb.woff",
+    "static/media/ProductSans-MediumItalic.woff": "/static/media/ProductSans-MediumItalic.11a5778a044e561c4898.woff",
+    "static/media/ProductSans-LightItalic.woff": "/static/media/ProductSans-LightItalic.64cab007f3bad63fb798.woff",
+    "static/media/ProductSans-ThinItalic.woff": "/static/media/ProductSans-ThinItalic.893736ad49bd70828551.woff",
+    "static/media/ProductSans-BlackItalic.woff": "/static/media/ProductSans-BlackItalic.1794539b9855fe02bc51.woff",
+    "static/media/ProductSans-Italic.woff": "/static/media/ProductSans-Italic.8c3afe1fc5112ad57bfe.woff",
+    "static/media/ProductSans-Medium.woff": "/static/media/ProductSans-Medium.70f0942277dd5cd83980.woff",
+    "static/media/ProductSans-Light.woff": "/static/media/ProductSans-Light.cabe32b8f11068b34404.woff",
+    "static/media/ProductSans-Bold.woff": "/static/media/ProductSans-Bold.0e179021d036d6dacfba.woff",
+    "static/media/ProductSans-Thin.woff": "/static/media/ProductSans-Thin.9484e2dd5f52aa496d2d.woff",
+    "static/media/ProductSans-Black.woff": "/static/media/ProductSans-Black.3999b85c1721ca079a59.woff",
+    "static/media/Group 66.png": "/static/media/Group 66.5714b6d35882da1a4756.png",
+    "static/media/skill-icons_instagram.svg": "/static/media/skill-icons_instagram.95e5f5779b3c4dc245c1326656c33b27.svg",
+    "static/media/jam_github.svg": "/static/media/jam_github.7ac84781500f23e8c467f2ef679291fd.svg",
+    "static/media/skill-icons_twitter.svg": "/static/media/skill-icons_twitter.fa9b31a863443ff4ee10827379930a83.svg",
+    "static/media/mdi_linkedin.svg": "/static/media/mdi_linkedin.4de3b53485deaa659fe18ac6b565e46c.svg",
+    "static/media/logos_google-gmail.svg": "/static/media/logos_google-gmail.f8d7445589a59332e9b6aa53dddafdb6.svg",
+    "index.html": "/index.html",
+    "main.85ec6137.css.map": "/static/css/main.85ec6137.css.map",
+    "main.1bfe86bf.js.map": "/static/js/main.1bfe86bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85ec6137.css",
+    "static/js/main.1bfe86bf.js"
+  ]
+}
