@@ -9,7 +9,7 @@ import {Page} from "../experience/experience";
 
 export const Overview = () => {
     return (<>
-        <div className="home_content">
+        <div className="home_content ">
             <div className="max_width">
                 <div className="search_result_heading">
                     Showing result for Abhinandan Singla

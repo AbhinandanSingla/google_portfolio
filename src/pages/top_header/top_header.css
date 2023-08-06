@@ -1,6 +1,6 @@
 .top_header {
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     padding: 1.5rem 0;
+    border-bottom: 1px solid var(--lines);
 }
 
 .top_header .max_width {
@@ -38,12 +38,13 @@
     padding: 1rem 3rem;
     font-size: 16px;
     font-family: var(--arial);
+    background: var(--input_bar);
+    color: var(--input_text);
 }
 
 .top_header .setting_icon {
     width: 24px;
     margin: 0 1rem;
-    color: #5f6368;
 }
 
 .top_header .user_icon {
@@ -81,7 +82,7 @@
     color: #5f6368;
 }
 
-.connect_nav_active {
+.top_header .connect_nav_active {
     color: #1a73e8;
 }
 
@@ -94,4 +95,63 @@
     width: 4rem;
     height: 4px;
     background: #1a73e8;
+}
+
+.setting_icon {
+    position: relative;
+}
+
+.setting_box {
+    position: absolute;
+    left: 50%;
+    margin-top: 2rem;
+    transform: translate(-50%, 0);
+    width: 12rem;
+    padding: 2rem 1rem;
+    background: #FFFFFF;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1rem;
+    border: 1px solid #5f6368;
+}
+
+.button_container {
+    padding: 0.4rem;
+    background: #454B4C;
+    border-radius: 10rem;
+    height: 3.4rem;
+    position: relative;
+}
+
+.button_container span {
+    font-family: var(--google_sans);
+    color: #ffff;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translate(-0%, -50%);
+}
+
+.dark_enabled .button_container span {
+    left: 10%;
+
+}
+
+.button_container .button_ball {
+    cursor: pointer;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #fff;
+    border-radius: 2rem;
+    transition: all 1s ease-in;
+    padding: 0.2rem;
+    float: left;
+
+}
+
+.dark_enabled .button_ball {
+    float: right;
+}
+
+.dark_enabled .button_container {
+    background: #8AB4F8;
 }

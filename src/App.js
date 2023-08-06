@@ -1,15 +1,29 @@
 import './App.css';
-import './assets/fonts/Arial/style.css';
 import './assets/fonts/Google Sans/style.css';
+import './assets/fonts/Arial/style.css';
+
 import {Top_header} from "./pages/top_header/top_header";
 import {Overview} from "./pages/home content/home content";
-import {Page} from "./pages/experience/experience";
+import {useState} from "react";
+import {DarkModeContext} from "./DarkMode";
 
-function App() {
+function App(defaultValue) {
+    const [darkMode, setDarkMode] = useState(false);
     return (
-        <div className="App">
-            <Top_header/>
-            <Overview/>
+        <div className={darkMode ? "App dark_theme" : "App light_theme"}>
+            <DarkModeContext.Provider value={[darkMode, setDarkMode]}>
+                <Top_header/>
+                <Overview/>
+                <footer>
+                    <div className={'top_footer'}>
+                        India
+                        <span>Thank you for visiting! Let's connect and explore potential opportunities together.</span>
+                    </div>
+                    <div className="bottom_footer">
+                        Created By &hearts;    </div>
+                </footer>
+
+            </DarkModeContext.Provider>
         </div>
     );
 }
