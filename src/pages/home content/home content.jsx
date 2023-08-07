@@ -6,6 +6,7 @@ import img4 from '../home content/Assets/images/Rectangle 11.png';
 import {Linkedin_icon} from "../../assets/social media icons/svg_exporter";
 import {Dotted_icon} from "../top_header/svg_exporter";
 import {Page} from "../experience/experience";
+import instagram from '../home content/Assets/images/Rectangle 9.png';
 
 export const Overview = () => {
     return (<>
@@ -80,7 +81,9 @@ export const Overview = () => {
                                 </div>
                                 <div className="sub_heading">Farma-Help</div>
                             </div>
-                            <div className="tr3"></div>
+                            <div className="tr3">
+                                <figure><img src={instagram} alt=""/></figure>
+                            </div>
                         </div>
                     </div>
 

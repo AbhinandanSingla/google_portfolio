@@ -155,7 +155,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-row-gap: 5px;
 }
 
 .home_content .right_container .sub_heading {
@@ -197,6 +197,17 @@
     border-radius: 20px;
     grid-area: 2 / 1 / 3 / 3;
     transition: all 1s ease-in;
+
+}
+
+.tr3 figure {
+    width: 100%;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.tr3 figure img {
+    scale: 1.35;
 
 }
 
