@@ -87,6 +87,8 @@ footer {
     font-size: 2rem;
     font-family: var(--google_sans);
     border-bottom: 1px solid var(--lines);
+    color: var(--footer_span);
+
 }
 
 .top_footer span {
@@ -96,7 +98,7 @@ footer {
     color: var(--footer_span);
 }
 
-.top_footer span:before {
+.top_footer .footer_dotted:before {
     content: "";
     width: 1.6rem;
     height: 1.6rem;
@@ -112,4 +114,5 @@ footer {
     padding: 1rem 20rem;
     font-size: 1.5rem;
     font-family: var(--roboto);
+    color: var(--footer_span);
 }

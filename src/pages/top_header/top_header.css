@@ -85,7 +85,12 @@
     font-family: var(--google_sans);
     font-size: 1.6rem;
     align-items: center;
-    color: #5f6368;
+    color: var(--sub_heading);
+}
+
+.top_header .connect_nav a {
+    text-decoration: none;
+    color: var(--sub_heading);
 }
 
 .top_header .connect_nav_active {

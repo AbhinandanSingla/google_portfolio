@@ -91,8 +91,8 @@ export const Page = () => {
         title: 'University',
         value: 'Thapar institute of engineering and technology',
     }, {
-        title: 'University',
-        value: 'Thapar institute of engineering and technology',
+        title: 'Course',
+        value: 'Bachelor of Engineering',
     }, {
         title: 'Majors',
         value: 'Fullstack, Flutter and Ml/DL',
@@ -104,7 +104,7 @@ export const Page = () => {
         'value': 'C,Java,Python,Dart,Javascript,Solidity',
     }, {
         'title': 'Frameworks/\nTechnologies   ',
-        'value': 'Mongodb, ExpressJs, ReactJs, NodeJs, jQuery, SQL, Flutter, Springboot, Graphql, Deep-Learning, Machine-learning, NLP, Blockchain.\n',
+        'value': 'Mongodb, ExpressJs, ReactJs, NodeJs, jQuery, SQL, Flutter,Firebase, Springboot, Graphql, Deep-Learning, Machine-learning, NLP, Blockchain.\n',
     }, {
         'title': 'Others',
         'value': 'Problem-solving, Management, Leadership skills, Writing skills, Interpersonal and Analytical skills, Teamwork, Adaptability, Time management',

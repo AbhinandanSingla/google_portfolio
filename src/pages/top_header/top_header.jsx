@@ -76,25 +76,25 @@ export const Top_header = () => {
                         <figure>
                             <LinkedIn_icon className={"inherit"}/>
                         </figure>
-                        <span>
-                        LinkedIn
-                    </span>
+                        <a href={'https://www.linkedin.com/in/abhinandansingla'}>
+                            LinkedIn
+                        </a>
                     </li>
                     <li className="connect_nav">
                         <figure>
                             <Twitter_icon className={"inherit"}/>
                         </figure>
-                        <span>
-                        Twitter
-                    </span>
+                        <a href={'https://twitter.com/D_Singla'}>
+                            Twitter
+                        </a>
                     </li>
                     <li className="connect_nav">
                         <figure>
                             <Contact_icon className={"inherit"}/>
                         </figure>
-                        <span>
-                        Contact
-                    </span>
+                        <a href={'mailto:abhinandansingla48@gmail.com'}>
+                            Contact
+                        </a>
                     </li>
                     <li className="connect_nav">
                         <figure>
