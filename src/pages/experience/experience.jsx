@@ -16,6 +16,7 @@ import uia1 from './assets/achievement/uia/Rectangle 20.png';
 import uia2 from './assets/achievement/uia/Rectangle 21.png';
 
 export const Page = () => {
+
     let experiences = [
         {
             profile_icon: habeto,
@@ -41,15 +42,15 @@ export const Page = () => {
         },
     ]
     let profile_icons = [{
-        "icon": linkedin, link: ''
+        "icon": linkedin, link: 'https://www.linkedin.com/in/abhinandansingla/'
     }, {
-        "icon": twitter, link: ''
+        "icon": twitter, link: 'https://twitter.com/D_Singla'
     }, {
-        "icon": instagram, link: ''
+        "icon": instagram, link: 'https://www.instagram.com/stories/_abhi_singla_'
     }, {
-        "icon": github, link: ''
+        "icon": github, link: 'https://github.com/AbhinandanSingla'
     }, {
-        "icon": gmail, link: ''
+        "icon": gmail, link: 'mailto:abhinandansingla48@gmail.com'
     }]
     let projects = [
         {
@@ -57,14 +58,17 @@ export const Page = () => {
             project_description: "Rojgar provides job recommendations based on resumes and job profiles. It also gives data about the match percentage of a job with your skill level. This project won the Smart India Hackathon (Problem No: NS1223 ).",
             project_img: rozjar,
             active: true,
+            project_link: "https://github.com/AbhinandanSingla/job_portal"
         }, {
             project_name: "FARMA-HELP",
             project_description: "Did a project named Farma-Help, used to determine soil moisture level and predict soil Moisture forthe next 5 days using pictures and weather condition information.Image processing and CNN models with 92% accuracy are used in this project. This project won the UNESCO India-Africa Hackathon (Agriculture Problem Statement no: AGRI14).",
             active: true,
+            project_link: "https://github.com/AbhinandanSingla/unseco"
         }, {
             project_name: "WarrantyVerse ",
             project_description: "Its main functionality is to mint a warranty in NFT. We can sell the warranty NFT, and its primary advantage is to increase the authenticity of our product warranty. Made it to Flipkart Grid 4.0 pre-finals.",
             active: true,
+            project_link: "https://github.com/AbhinandanSingla/WarrantyVerse-Ethereum"
         },
     ]
     let research = [
@@ -72,20 +76,23 @@ export const Page = () => {
             reseach_title: "Content Analysis of Twitter conversations on Turkey – ’Syria Earthquakes’",
             description: "This Research paperis selected among the top 20% papers in ICDAM 2023, London . It will be published in Springer afterthe ICDAM Conference, London",
             img: spinger,
-            place: "Remote | Oct 2021 to Dec 2021"
+            place: "Remote | Oct 2021 to Dec 2021",
+            link: ""
         }
     ]
     let achievements = [{
         imgs: [uia1, uia2],
         title: "UNESCO India Africa Hackathon 2022",
         description: "It was an International Hackathon organized by the Government of India. Secured first position in UNESCO India-Africa Hackathon and won a cash prize of Rupees 3,00,000/- . The Vice president and Education minister of India gave the prize money in a prestigious ceremony.",
-        place: "Noida | Nov 2022"
+        place: "Noida | Nov 2022",
+        link: ""
     }, {
         imgs: [sih1, sih2],
         description: "It was a National hackathon Organized by the Government of India. \n" +
             "Won first place and a cash prize of rupees 1,00,000 in Smart India Hackathon 2022",
         title: "Smart India Hackathon 2022",
-        place: "Andhra pradesh | Aug 2022"
+        place: "Andhra pradesh | Aug 2022",
+        link: ""
     }]
     let about = [{
         title: 'University',
@@ -110,7 +117,7 @@ export const Page = () => {
         'value': 'Problem-solving, Management, Leadership skills, Writing skills, Interpersonal and Analytical skills, Teamwork, Adaptability, Time management',
     },]
     return <>
-        <div className="page">
+        <div className="page" id={"experience"}>
             <div className="col_1">
                 <div className="experience_container">
                     {
@@ -119,10 +126,12 @@ export const Page = () => {
                                     <img src={d.profile_icon} alt=""/>
                                     <div className="heading_container">
                                         <div className="main_heading">
-                                            {d.profile_heading}
+                                                {d.profile_heading}
                                         </div>
                                         <div className="sub_heading">
-                                            {d.profile_sub_heading}
+                                            <a href={d.profile_sub_heading}>
+                                                {d.profile_sub_heading}
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -138,7 +147,7 @@ export const Page = () => {
                         )
                     }
                 </div>
-                <div className="projects">
+                <div className="projects" id={"projects"}>
                     <div className="heading_container">
                         <div className="heading">
                             Projects
@@ -152,39 +161,39 @@ export const Page = () => {
                             <figure><img src={projects[0].project_img}
                                          alt=""/></figure>
                             <div className="project_heading">
-                                {projects[0].project_name}
+                                <a href={projects[0].project_link}>{projects[0].project_name}</a>
                             </div>
                             <div className="project_description">
-                                {projects[0].project_description}
+                                <a href={projects[0].project_link}>{projects[0].project_description}</a>
                             </div>
                         </div>
                         <div className="project2">
                             <div className="project_heading">
-                                {projects[1].project_name}
+                                <a href={projects[1].project_link}>{projects[1].project_name}</a>
 
                             </div>
                             <div className="project_description">
-                                {projects[1].project_description}
+                                <a href={projects[1].project_link}>{projects[1].project_description}</a>
                             </div>
                         </div>
                         <div className="project3">
                             <div className="project_heading">
-                                {projects[2].project_name}
+                                <a href={projects[2].project_link}>{projects[2].project_name}</a>
 
                             </div>
                             <div className="project_description">
-                                {projects[2].project_description}
+                                <a href={projects[2].project_link}>{projects[2].project_description}</a>
                             </div>
                         </div>
                     </div>
                     <div className="more">
-                        <div className={'more_line'}></div>
+                        <div className={'more_line'}/>
                         <div className="more_button">
                             View More
                         </div>
                     </div>
                 </div>
-                <div className="research_works">
+                <div className="research_works" id={"research"}>
                     <div className="heading_container">
                         <div className="heading">
                             Research Works

@@ -27,9 +27,9 @@ export const Overview = () => {
                         </div>
                         <ul className="tab_section">
                             <li className="tab tab_active">Overview</li>
-                            <li className="tab">Experience</li>
-                            <li className="tab">Projects</li>
-                            <li className="tab">Research</li>
+                            <li className="tab"><a href="#experience">Experience</a></li>
+                            <li className="tab"><a href="#projects">Projects</a></li>
+                            <li className="tab"><a href="#research">Research</a></li>
                         </ul>
                     </div>
 
