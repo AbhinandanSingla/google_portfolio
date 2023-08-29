@@ -1,12 +1,19 @@
 .top_header {
-    padding: 1.5rem 0;
+    padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--lines);
 }
 
-.top_header .max_width {
-    background: var(--main_bg);
+.nav_header {
     position: fixed;
     width: 100%;
+    background: var(--main_bg);
+    top: 0;
+    z-index: 999;
+}
+.mobile_navbar{
+    display: none;
+}
+.top_header .max_width {
     display: flex;
     justify-content: space-between;
     top: 0;
@@ -19,10 +26,6 @@
 .top_header .front_container {
     display: flex;
     gap: 2rem;
-}
-
-.top_header .google_logo {
-    width: 10rem;
 }
 
 
@@ -66,7 +69,7 @@
 
 .top_header .connect_bar {
     display: flex;
-    margin-top: 10rem;
+    margin-top: 15rem;
     padding-left: 20rem;
     gap: 3rem;
     align-items: center;
@@ -166,4 +169,29 @@
 
 .dark_enabled .button_container {
     background: #8AB4F8;
+}
+
+@media (max-width: 900px) {
+    .top_header .mobile_navbar .google_logo {
+        display: block;
+        width: 10rem;
+        height: 6rem;
+    }
+
+    .top_header .mobile_navbar .menu {
+        padding-left: 2rem;
+    }
+
+    .top_header .mobile_navbar .profile {
+        padding-right: 2rem;
+    }
+
+    .top_header .mobile_navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .top_header .max_width {
+    }
 }

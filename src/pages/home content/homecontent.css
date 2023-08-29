@@ -39,7 +39,7 @@
     gap: 2rem;
 }
 
-.home_content .tab_section .tab{
+.home_content .tab_section .tab {
     display: inline-block;
     padding: 1.5rem 3rem;
     background: var(--tabs);
@@ -49,11 +49,13 @@
     color: var(--tab_active);
     transition: all 1s ease-in;
 }
-.home_content .tab_section .tab a{
+
+.home_content .tab_section .tab a {
     text-decoration: none;
     color: var(--tab_active);
 
 }
+
 .home_content .tab_section .tab_active {
     border: 1px solid var(--tab_active);
 }
@@ -238,4 +240,8 @@
     font-family: var(--google_sans);
     font-size: 12px;
     line-height: 16px;
+}
+
+.mobile_left_container {
+    display: none;
 }

@@ -297,7 +297,7 @@ export const Page = () => {
                         }
                     </div>
                 </div>
-                <div className="aboutus">
+                <div className="aboutus profile_section">
                     <div className="heading">
                         Profiles
                     </div>

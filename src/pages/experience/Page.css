@@ -149,6 +149,15 @@
 }
 
 @media (max-width: 900px) {
+    .home_content .overview_container .left_container {
+        display: none;
+    }
+
+    .mobile_left_container {
+        display: block;
+        width: 100%;
+    }
+
     .home_content .home_content_container {
         flex-wrap: wrap;
         justify-content: center;
@@ -172,9 +181,6 @@
         padding: 2rem;
     }
 
-    .top_header .search_box input {
-        width: 70rem;
-    }
 
     .top_header .google_logo {
         display: none;
@@ -182,14 +188,24 @@
 
     .top_header .front_container {
         gap: 0rem;
+        width: 100%;
+    }
+
+    .search_box {
+        width: 100%;
     }
 
     .settings {
         display: none;
     }
 
+    .top_header .search_box input {
+        width: 100%;
+        margin: 0 2rem;
+    }
+
     .page {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .page .col_1 {
@@ -199,16 +215,20 @@
     .page .col_2 {
         height: auto;
         width: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .profile_section {
+        display: none;
     }
 
     .heading {
         text-align: center;
     }
-
-    .about_container .row .cell_value {
-        width: 45rem;
+    .page .col_2 .aboutus .heading{
+        text-align: left;
     }
-
     .top_footer {
         padding: 2rem;
     }
@@ -409,9 +429,6 @@
         padding: 2rem 0;
     }
 
-    .top_header .search_box input {
-        width: 45rem;
-    }
 
     .experience_card .card_content {
         font-size: 1.3rem;
@@ -461,10 +478,30 @@
     }
 
     .about_container .row {
-        width: auto;
+        /*width: auto;*/
+        display: inline-flex;
     }
 
     .about_container .row .cell_value {
-        width: auto;
+        /*width: auto;*/
+    }
+
+    .page .col_2 .aboutus .heading {
+        text-align: left;
+    }
+}
+
+@media (max-width: 670px) {
+    .page .col_2 {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .about_container{
+        display: grid;
+    }
+    .home_content_container .middle_container,
+    .home_content_container .right_container {
+        display: none;
     }
 }

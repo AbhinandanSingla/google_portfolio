@@ -7,8 +7,28 @@ import {Linkedin_icon} from "../../assets/social media icons/svg_exporter";
 import {Dotted_icon} from "../top_header/svg_exporter";
 import {Page} from "../experience/experience";
 import instagram from '../home content/Assets/images/Rectangle 9.png';
+import {useEffect} from "react";
+import Swiper from 'swiper';
+import {Navigation, Pagination} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export const Overview = () => {
+    useEffect(() => {
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+            slidesPerView: 3,
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            spaceBetween: 20,
+
+        });
+
+    })
     return (<>
         <div className="home_content ">
             <div className="max_width">
@@ -34,6 +54,22 @@ export const Overview = () => {
                     </div>
 
                     <div className="home_content_container">
+                        <div className="mobile_left_container">
+                            <swiper-container>
+                                <div className="swiper">
+                                    <div className="swiper-wrapper">
+                                        <div className="swiper-slide"><img className={'inherit'} src={img1} alt=""/>
+                                        </div>
+                                        <div className="swiper-slide"><img className={'inherit'} src={img1} alt=""/>
+                                        </div>
+                                        <div className="swiper-slide"><img className={'inherit'} src={img1} alt=""/>
+                                        </div>
+                                        <div className="swiper-slide"><img className={'inherit'} src={img1} alt=""/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </swiper-container>
+                        </div>
                         <div className="left_container">
                             <div className="tl1">
                                 <figure>
