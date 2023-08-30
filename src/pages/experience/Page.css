@@ -476,7 +476,7 @@
     }
 
     .achievement .achievement_container .achievement_images {
-        overflow: hidden;
+        overflow: scroll;
     }
 
     .about_container .row {
