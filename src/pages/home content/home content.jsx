@@ -88,12 +88,6 @@ export const Overview = () => {
                                         <div className="swiper-slide"><img className={'inherit'} src={mobile_img4}
                                                                            alt=""/>
                                         </div>
-                                        <div className="swiper-slide"><img className={'inherit'} src={mobile_img5}
-                                                                           alt=""/>
-                                        </div>
-                                        <div className="swiper-slide"><img className={'inherit'} src={mobile_img6}
-                                                                           alt=""/>
-                                        </div>
                                         <div className="swiper-slide"><img className={'inherit'} src={mobile_img7}
                                                                            alt=""/>
                                         </div>

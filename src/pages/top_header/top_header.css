@@ -251,8 +251,27 @@
         transition: all 1s ease-in;
     }
 
+    .top_header .mobile_connect_bar .tab a {
+        text-decoration: none;
+        color: var(--tab_active);
+    }
+
     .top_footer span {
         padding-left: 2rem;
         font-size: 1.5rem;
+    }
+
+    .research_works .card_content {
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+        .heading {
+            text-align: left !important;
+        }
+    .project_container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto !important;
+        grid-column-gap: 0px;
+        grid-row-gap: 15px !important;
     }
 }

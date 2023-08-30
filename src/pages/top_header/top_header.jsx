@@ -23,7 +23,7 @@ export const Top_header = () => {
             <div className="nav_header">
                 <div className="mobile_navbar">
                     <div className="menu">
-                        <Mobile_Menu_icon/>
+                        <Mobile_Menu_icon color={darkMode ? "white" : "black"}/>
                     </div>
                     <div className="google_logo">
                         <img src={google_logo} alt=""/>
@@ -81,19 +81,19 @@ export const Top_header = () => {
             </div>
             <div className="mobile_connect_bar">
                 <div className="tab">
-                    All
+                    <a href="">All</a>
                 </div>
                 <div className="tab">
-                    LinkedIn
+                    <a href="https://www.linkedin.com/in/abhinandansingla/">LinkedIn</a>
                 </div>
                 <div className="tab">
-                    Twitter
+                    <a href="https://twitter.com/D_Singla">Twitter</a>
                 </div>
                 <div className="tab">
-                    Github
+                    <a href="https://github.com/AbhinandanSingla">Github</a>
                 </div>
                 <div className="tab">
-                    Contact
+                    <a href="mailto:abhinandansingla48@gmail.com">Contact</a>
                 </div>
             </div>
             <ul className="connect_bar">
