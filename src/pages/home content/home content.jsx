@@ -14,12 +14,30 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import mobile_img1 from "../home content/Assets/mobile_images/Rectangle 44.png"
+import mobile_img2 from "../home content/Assets/mobile_images/Rectangle 45.png"
+import mobile_img3 from "../home content/Assets/mobile_images/Rectangle 46.png"
+import mobile_img4 from "../home content/Assets/mobile_images/Rectangle 47.png"
+import mobile_img5 from "../home content/Assets/mobile_images/Rectangle 48.png"
+import mobile_img6 from "../home content/Assets/mobile_images/Rectangle 49.png"
+import mobile_img7 from "../home content/Assets/mobile_images/Rectangle 50.png"
+
 export const Overview = () => {
     useEffect(() => {
         const swiper = new Swiper('.swiper', {
             // Optional parameters
             loop: true,
-            slidesPerView: 3,
+            slidesPerView: 1,
+            breakpoints: {
+                460: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                640: {
+                    slidesPerView: 3,
+
+                }
+            },
             // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
@@ -58,13 +76,26 @@ export const Overview = () => {
                             <swiper-container>
                                 <div className="swiper">
                                     <div className="swiper-wrapper">
-                                        <div className="swiper-slide"><img className={'inherit'} src={img1} alt=""/>
+                                        <div className="swiper-slide">
+                                            <img className={"inherit"} src={mobile_img1} alt=""/>
                                         </div>
-                                        <div className="swiper-slide"><img className={'inherit'} src={img1} alt=""/>
+                                        <div className="swiper-slide">
+                                            <img className={'inherit'} src={mobile_img2} alt=""/>
                                         </div>
-                                        <div className="swiper-slide"><img className={'inherit'} src={img1} alt=""/>
+                                        <div className="swiper-slide"><img className={'inherit'} src={mobile_img3}
+                                                                           alt=""/>
                                         </div>
-                                        <div className="swiper-slide"><img className={'inherit'} src={img1} alt=""/>
+                                        <div className="swiper-slide"><img className={'inherit'} src={mobile_img4}
+                                                                           alt=""/>
+                                        </div>
+                                        <div className="swiper-slide"><img className={'inherit'} src={mobile_img5}
+                                                                           alt=""/>
+                                        </div>
+                                        <div className="swiper-slide"><img className={'inherit'} src={mobile_img6}
+                                                                           alt=""/>
+                                        </div>
+                                        <div className="swiper-slide"><img className={'inherit'} src={mobile_img7}
+                                                                           alt=""/>
                                         </div>
                                     </div>
                                 </div>

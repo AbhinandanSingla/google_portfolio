@@ -226,9 +226,11 @@
     .heading {
         text-align: center;
     }
-    .page .col_2 .aboutus .heading{
+
+    .page .col_2 .aboutus .heading {
         text-align: left;
     }
+
     .top_footer {
         padding: 2rem;
     }
@@ -497,11 +499,23 @@
         flex-direction: column;
         gap: 2rem;
     }
-    .about_container{
+
+    .about_container {
         display: grid;
     }
+
     .home_content_container .middle_container,
     .home_content_container .right_container {
         display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .experience_container {
+        border-right: none;
+    }
+
+    .page .col_2 .aboutus .heading {
+        width: 60%;
     }
 }

@@ -126,7 +126,7 @@ export const Page = () => {
                                     <img src={d.profile_icon} alt=""/>
                                     <div className="heading_container">
                                         <div className="main_heading">
-                                                {d.profile_heading}
+                                            {d.profile_heading}
                                         </div>
                                         <div className="sub_heading">
                                             <a href={d.profile_sub_heading}>

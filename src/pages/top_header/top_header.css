@@ -3,23 +3,24 @@
     border-bottom: 1px solid var(--lines);
 }
 
-.nav_header {
+.nav_header .max_width {
     position: fixed;
     width: 100%;
     background: var(--main_bg);
     top: 0;
     z-index: 999;
 }
-.mobile_navbar{
+
+.mobile_navbar {
     display: none;
 }
+
 .top_header .max_width {
     display: flex;
     justify-content: space-between;
     top: 0;
     align-items: center;
-    padding: 0 5rem;
-    padding-top: 2.3rem;
+    padding: 2.3rem;
 
 }
 
@@ -28,6 +29,9 @@
     gap: 2rem;
 }
 
+.top_header .google_logo {
+    width: 8rem;
+}
 
 .top_header .google_logo img {
     width: 100%;
@@ -61,7 +65,7 @@
     margin: 0 1rem;
 }
 
-.top_header .setting_icon svg {
+.top_header .setting_icon svg, .top_header .setting_icon img {
     width: 100%;
     height: 100%;
 
@@ -69,7 +73,7 @@
 
 .top_header .connect_bar {
     display: flex;
-    margin-top: 15rem;
+    padding-top: 10rem;
     padding-left: 20rem;
     gap: 3rem;
     align-items: center;
@@ -178,6 +182,14 @@
         height: 6rem;
     }
 
+    .top_header .connect_bar {
+        padding-top: 1rem
+    }
+
+    .top_header .max_width {
+        position: relative;
+    }
+
     .top_header .mobile_navbar .menu {
         padding-left: 2rem;
     }
@@ -190,8 +202,57 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 1rem 0;
+    }
+}
+
+.mobile_connect_bar {
+    display: none;
+    overflow: scroll;
+    padding-left: 2rem;
+}
+
+@media (max-width: 480px) {
+    .top_header .mobile_connect_bar {
+        display: flex;
+        gap: 1rem;
     }
 
-    .top_header .max_width {
+    .home_content .tab_section {
+        overflow: scroll;
+    }
+
+    .home_content .tab_section .tab {
+        padding: 0.5rem 1rem !important;
+    }
+
+    .about_container .row {
+        flex-direction: column;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .about_container .row .cell_value {
+        padding: 0.5rem 0;
+    }
+
+    .top_header .connect_bar {
+        display: none;
+    }
+
+    .top_header .mobile_connect_bar .tab {
+        display: inline-block;
+        padding: 0.5rem 2rem;
+        background: var(--tabs);
+        border-radius: 50px;
+        font-size: 14px;
+        font-family: var(--google_sans);
+        color: var(--tab_active);
+        transition: all 1s ease-in;
+    }
+
+    .top_footer span {
+        padding-left: 2rem;
+        font-size: 1.5rem;
     }
 }
