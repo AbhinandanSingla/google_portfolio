@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AbhinandanSingla/google_portfolio/static/css/main.441b1e32.css",
+    "main.css": "/AbhinandanSingla/google_portfolio/static/css/main.2e817613.css",
     "main.js": "/AbhinandanSingla/google_portfolio/static/js/main.b5b5b67a.js",
     "static/media/Rectangle 45.png": "/AbhinandanSingla/google_portfolio/static/media/Rectangle 45.e1cd0241bbebce57e3c0.png",
     "static/media/Rectangle 46.png": "/AbhinandanSingla/google_portfolio/static/media/Rectangle 46.0e7f0b799d3c1705c566.png",
@@ -36,11 +36,11 @@
     "static/media/mdi_linkedin.svg": "/AbhinandanSingla/google_portfolio/static/media/mdi_linkedin.4de3b53485deaa659fe18ac6b565e46c.svg",
     "static/media/logos_google-gmail.svg": "/AbhinandanSingla/google_portfolio/static/media/logos_google-gmail.f8d7445589a59332e9b6aa53dddafdb6.svg",
     "index.html": "/AbhinandanSingla/google_portfolio/index.html",
-    "main.441b1e32.css.map": "/AbhinandanSingla/google_portfolio/static/css/main.441b1e32.css.map",
+    "main.2e817613.css.map": "/AbhinandanSingla/google_portfolio/static/css/main.2e817613.css.map",
     "main.b5b5b67a.js.map": "/AbhinandanSingla/google_portfolio/static/js/main.b5b5b67a.js.map"
   },
   "entrypoints": [
-    "static/css/main.441b1e32.css",
+    "static/css/main.2e817613.css",
     "static/js/main.b5b5b67a.js"
   ]
 }
