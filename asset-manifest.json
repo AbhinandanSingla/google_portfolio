@@ -1,8 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.797b2e5c.css",
-    "main.js": "/static/js/main.6f2ed5a4.js",
+    "main.css": "/static/css/main.ac27081b.css",
+    "main.js": "/static/js/main.617f410d.js",
+    "static/media/Rectangle 45.png": "/static/media/Rectangle 45.e1cd0241bbebce57e3c0.png",
+    "static/media/Rectangle 46.png": "/static/media/Rectangle 46.0e7f0b799d3c1705c566.png",
+    "static/media/Rectangle 44.png": "/static/media/Rectangle 44.00b19103faf1a03d1951.png",
+    "static/media/Rectangle 47.png": "/static/media/Rectangle 47.d932908b89b5c5ce2dfa.png",
+    "static/media/Rectangle 48.png": "/static/media/Rectangle 48.e2ec1fdfdf5b7c96b447.png",
+    "static/media/Rectangle 49.png": "/static/media/Rectangle 49.4fd9e2736dd61b575939.png",
     "static/media/Rectangle 4.png": "/static/media/Rectangle 4.3a349a9f7eed5a616b54.png",
+    "static/media/Rectangle 50.png": "/static/media/Rectangle 50.1383fd8a1b5a3c19b641.png",
     "static/media/Rectangle 21.png": "/static/media/Rectangle 21.aa1727f60e8e9dfb0efb.png",
     "static/media/Rectangle 9.png": "/static/media/Rectangle 9.1fab18d8e37b5ed571f8.png",
     "static/media/Rectangle 20.png": "/static/media/Rectangle 20.2eea86c04526dd0a5fb9.png",
@@ -29,11 +36,11 @@
     "static/media/mdi_linkedin.svg": "/static/media/mdi_linkedin.4de3b53485deaa659fe18ac6b565e46c.svg",
     "static/media/logos_google-gmail.svg": "/static/media/logos_google-gmail.f8d7445589a59332e9b6aa53dddafdb6.svg",
     "index.html": "/index.html",
-    "main.797b2e5c.css.map": "/static/css/main.797b2e5c.css.map",
-    "main.6f2ed5a4.js.map": "/static/js/main.6f2ed5a4.js.map"
+    "main.ac27081b.css.map": "/static/css/main.ac27081b.css.map",
+    "main.617f410d.js.map": "/static/js/main.617f410d.js.map"
   },
   "entrypoints": [
-    "static/css/main.797b2e5c.css",
-    "static/js/main.6f2ed5a4.js"
+    "static/css/main.ac27081b.css",
+    "static/js/main.617f410d.js"
   ]
 }
