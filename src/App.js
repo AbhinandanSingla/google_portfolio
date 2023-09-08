@@ -6,7 +6,6 @@ import {Top_header} from "./pages/top_header/top_header";
 import {Overview} from "./pages/home content/home content";
 import {useState} from "react";
 import {DarkModeContext} from "./DarkMode";
-
 function App(defaultValue) {
     const [darkMode, setDarkMode] = useState(false);
     return (
@@ -17,12 +16,11 @@ function App(defaultValue) {
                 <footer>
                     <div className={'top_footer'}>
                         India
-                        <span><span className={'footer_dotted'} />Thank you for visiting! Let's connect and explore potential opportunities together.</span>
+                        <span><span className={'footer_dotted'}/>Thank you for visiting! Let's connect and explore potential opportunities together.</span>
                     </div>
                     <div className="bottom_footer">
                         Created By &hearts;    </div>
                 </footer>
-
             </DarkModeContext.Provider>
         </div>
     );

@@ -14,9 +14,51 @@ import sih1 from './assets/achievement/sih/Rectangle 20.png';
 import sih2 from './assets/achievement/sih/Rectangle 21.png';
 import uia1 from './assets/achievement/uia/Rectangle 20.png';
 import uia2 from './assets/achievement/uia/Rectangle 21.png';
+import {useEffect, useState} from "react";
+import Swiper from "swiper";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import {Pagination} from 'swiper/modules';
+import {Information_container} from "../../common_components/information_container";
+import {Python} from "../../common_components/language_icon_loader";
 
 export const Page = () => {
+    function launchInfo(type, tags, gallery, projectHeading, projectContent, footer) {
+        return <Information_container props={{
+            type: type, tags: tags,
+            gallery: gallery,
+            projectHeading: projectHeading,
+            projectContent: projectContent,
+            footer: footer
+        }}/>
+    }
 
+    const i = 0;
+    const [projectMoreBtn, setProjectModeBtn] = useState(false);
+    const [infoCard, setInfoCard] = useState();
+    useEffect(() => {
+        new Swiper('.project_swiper', {
+            // Optional parameters
+            loop: true,
+            slidesPerView: 1,
+            createElements: true,
+            preventClicks: false,
+            allowSlidePrev: false,
+            navigation: false,
+            allowTouchMove: false,
+            touchStartPreventDefault: false,
+            watchSlidesProgress: false,
+            preventClicksPropagation: false,
+            cssMode: true,
+            spaceBetween: 20,
+            effect: "flip",
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            modules: [Pagination]
+        });
+    }, )
     let experiences = [
         {
             profile_icon: habeto,
@@ -58,7 +100,21 @@ export const Page = () => {
             project_description: "Rojgar provides job recommendations based on resumes and job profiles. It also gives data about the match percentage of a job with your skill level. This project won the Smart India Hackathon (Problem No: NS1223 ).",
             project_img: rozjar,
             active: true,
-            project_link: "https://github.com/AbhinandanSingla/job_portal"
+            project_link: "https://github.com/AbhinandanSingla/job_portal",
+            expand: {
+                type: "project", tags: [{
+                    name: "",
+                    icon: <Python/>,
+                    link: ""
+                }],
+                gallery: [],
+                projectHeading: {
+                    heading: "",
+                    link: ""
+                },
+                projectContent: [],
+                footer: ""
+            }
         }, {
             project_name: "FARMA-HELP",
             project_description: "Did a project named Farma-Help, used to determine soil moisture level and predict soil Moisture forthe next 5 days using pictures and weather condition information.Image processing and CNN models with 92% accuracy are used in this project. This project won the UNESCO India-Africa Hackathon (Agriculture Problem Statement no: AGRI14).",
@@ -74,7 +130,7 @@ export const Page = () => {
     let research = [
         {
             reseach_title: "Content Analysis of Twitter conversations on Turkey – ’Syria Earthquakes’",
-            description: "This Research paperis selected among the top 20% papers in ICDAM 2023, London . It will be published in Springer afterthe ICDAM Conference, London",
+            description: "This Research paper is selected among the top 20% papers in ICDAM 2023, London . It will be published in Springer afterthe ICDAM Conference, London",
             img: spinger,
             place: "Remote | Oct 2021 to Dec 2021",
             link: ""
@@ -89,7 +145,7 @@ export const Page = () => {
     }, {
         imgs: [sih1, sih2],
         description: "It was a National hackathon Organized by the Government of India. \n" +
-            "Won first place and a cash prize of rupees 1,00,000 in Smart India Hackathon 2022",
+            "Won first place and a cash prize of Rupees 1,00,000/- in Smart India Hackathon 2022",
         title: "Smart India Hackathon 2022",
         place: "Andhra pradesh | Aug 2022",
         link: ""
@@ -104,7 +160,6 @@ export const Page = () => {
         title: 'Majors',
         value: 'Fullstack, Flutter and Ml/DL',
     },]
-
     let skills = [{
         'title': 'Programming\n' +
             'Languages',
@@ -116,12 +171,13 @@ export const Page = () => {
         'title': 'Others',
         'value': 'Problem-solving, Management, Leadership skills, Writing skills, Interpersonal and Analytical skills, Teamwork, Adaptability, Time management',
     },]
+
     return <>
         <div className="page" id={"experience"}>
             <div className="col_1">
                 <div className="experience_container">
                     {
-                        experiences.map((d, index) => <div className="experience_card">
+                        experiences.map((d, index) => <div key={index} className="experience_card">
                                 <div className="top_container">
                                     <img src={d.profile_icon} alt=""/>
                                     <div className="heading_container">
@@ -156,41 +212,89 @@ export const Page = () => {
                             showing Result for project
                         </div>
                     </div>
-                    <div className="project_container">
-                        <div className="project1">
-                            <figure><img src={projects[0].project_img}
-                                         alt=""/></figure>
-                            <div className="project_heading">
-                                <a href={projects[0].project_link}>{projects[0].project_name}</a>
-                            </div>
-                            <div className="project_description">
-                                <a href={projects[0].project_link}>{projects[0].project_description}</a>
-                            </div>
-                        </div>
-                        <div className="project2">
-                            <div className="project_heading">
-                                <a href={projects[1].project_link}>{projects[1].project_name}</a>
+                    <div className={"project_swiper"}>
+                        <div className="swiper-wrapper">
+                            <div className="swiper-slide">
+                                <div className="project_container">
+                                    <div className="project1" onClick={() => {
+                                        setInfoCard(launchInfo())
+                                    }
+                                    }>
+                                        <figure>
+                                            <img src={projects[i].project_img} alt=""/>
+                                        </figure>
+                                        <div className="project_heading">
+                                            {projects[i].project_name}
+                                        </div>
+                                        <div className="project_description">
+                                            {projects[i].project_description}
+                                        </div>
+                                    </div>
+                                    <div className="project2">
+                                        <div className="project_heading">
+                                            {projects[i + 1].project_name}
 
+                                        </div>
+                                        <div className="project_description">
+                                            {projects[i + 1].project_description}
+                                        </div>
+                                    </div>
+                                    <div className="project3">
+                                        <div className="project_heading">
+                                            {projects[i + 2].project_name}
+                                        </div>
+                                        <div className="project_description">{projects[i + 2].project_description}
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="project_description">
-                                <a href={projects[1].project_link}>{projects[1].project_description}</a>
-                            </div>
-                        </div>
-                        <div className="project3">
-                            <div className="project_heading">
-                                <a href={projects[2].project_link}>{projects[2].project_name}</a>
+                            <div className="swiper-slide">
+                                <div className="project_container">
+                                    <div className="project1" onClick={() => {
+                                        setInfoCard(launchInfo())
+                                    }
+                                    }>
+                                        <figure>
+                                            <img src={projects[i].project_img} alt=""/>
+                                        </figure>
+                                        <div className="project_heading">
+                                            {projects[i].project_name}
+                                        </div>
+                                        <div className="project_description">
+                                            {projects[i].project_description}
+                                        </div>
+                                    </div>
+                                    <div className="project2">
+                                        <div className="project_heading">
+                                            {projects[i + 1].project_name}
 
-                            </div>
-                            <div className="project_description">
-                                <a href={projects[2].project_link}>{projects[2].project_description}</a>
+                                        </div>
+                                        <div className="project_description">
+                                            {projects[i + 1].project_description}
+                                        </div>
+                                    </div>
+                                    <div className="project3">
+                                        <div className="project_heading">
+                                            {projects[i + 2].project_name}
+                                        </div>
+                                        <div className="project_description">{projects[i + 2].project_description}
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="more">
-                        <div className={'more_line'}/>
-                        <div className="more_button">
-                            View More
-                        </div>
+                        {
+                            projectMoreBtn ? <div>
+                                    <div className="swiper-pagination"/>
+                                </div>
+                                : <div className="more" onClick={() => setProjectModeBtn(true)}>
+                                    <div className={'more_line'}/>
+                                    <div className="more_button">
+                                        View More
+                                    </div>
+                                </div>
+                        }
+
                     </div>
                 </div>
                 <div className="research_works" id={"research"}>
@@ -202,7 +306,7 @@ export const Page = () => {
                             Showing Results for Research works
                         </div>
                     </div>
-                    {research.map((v, index) => <div className="experience_card">
+                    {research.map((v, index) => <div key={index} className="experience_card">
                         <div className="card_heading">
                             {v.reseach_title}
                         </div>
@@ -234,9 +338,9 @@ export const Page = () => {
                     {achievements.map((v, index) => {
                         let style = index !== 0 ? {padding: "2rem 0"} : {};
                         return (
-                            <div className="achievement_container" style={style}>
+                            <div key={index} className="achievement_container" style={style}>
                                 <div className="achievement_images">
-                                    {v.imgs.map((d, index) => <figure>
+                                    {v.imgs.map((d, index) => <figure key={index}>
                                         <img src={d} alt=""/>
                                     </figure>)}
                                 </div>
@@ -250,7 +354,7 @@ export const Page = () => {
                             </div>)
                     })}
                     <div className="more">
-                        <div className={'more_line'}></div>
+                        <div className={'more_line'}/>
                         <div className="more_button">
                             View More
                         </div>
@@ -267,7 +371,7 @@ export const Page = () => {
                     </div>
                     <div className="about_container">
                         {
-                            about.map((v, index) => <div className={'row'}>
+                            about.map((v, index) => <div key={index} className={'row'}>
                         <span className="cell">
                             {v.title} :
                         </span>
@@ -286,7 +390,7 @@ export const Page = () => {
                     </div>
                     <div className="about_container">
                         {
-                            skills.map((v, index) => <div className={'row'}>
+                            skills.map((v, index) => <div key={index} className={'row'}>
                         <span className="cell_label ">
                            {v.title} :
                         </span>
@@ -305,7 +409,7 @@ export const Page = () => {
                         <div className={'row'}>
                             <div className="profile_logos">
                                 {
-                                    profile_icons.map((d, index) => <a href={d.link}>
+                                    profile_icons.map((d, index) => <a key={index} href={d.link}>
                                             <figure><img src={d.icon} alt=""/></figure>
                                         </a>
                                     )
@@ -316,5 +420,6 @@ export const Page = () => {
                 </div>
             </div>
         </div>
+        {infoCard}
     </>;
 }

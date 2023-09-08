@@ -134,7 +134,7 @@ export const Overview = () => {
                                 <div className="main_heading ">
                                     Age
                                 </div>
-                                <div className="sub_heading">24 years</div>
+                                <div className="sub_heading">21 years</div>
                             </div>
                             <div className="tr2">
                                 <div className="main_heading ">
