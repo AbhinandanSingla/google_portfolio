@@ -20,19 +20,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import {Pagination} from 'swiper/modules';
-import {Information_container} from "../../common_components/information_container";
 import {Python} from "../../common_components/language_icon_loader";
+import {v4 as uuidv4} from "uuid";
+import {Information_container} from "../../common_components/information_container";
 
 export const Page = () => {
-    function launchInfo(type, tags, gallery, projectHeading, projectContent, footer) {
-        return <Information_container props={{
-            type: type, tags: tags,
-            gallery: gallery,
-            projectHeading: projectHeading,
-            projectContent: projectContent,
-            footer: footer
-        }}/>
-    }
 
     const i = 0;
     const [projectMoreBtn, setProjectModeBtn] = useState(false);
@@ -44,12 +36,8 @@ export const Page = () => {
             slidesPerView: 1,
             createElements: true,
             preventClicks: false,
-            allowSlidePrev: false,
+            allowSlidePrev: false, allowTouchMove: false,
             navigation: false,
-            allowTouchMove: false,
-            touchStartPreventDefault: false,
-            watchSlidesProgress: false,
-            preventClicksPropagation: false,
             cssMode: true,
             spaceBetween: 20,
             effect: "flip",
@@ -58,7 +46,7 @@ export const Page = () => {
             },
             modules: [Pagination]
         });
-    }, )
+    },)
     let experiences = [
         {
             profile_icon: habeto,
@@ -217,41 +205,6 @@ export const Page = () => {
                             <div className="swiper-slide">
                                 <div className="project_container">
                                     <div className="project1" onClick={() => {
-                                        setInfoCard(launchInfo())
-                                    }
-                                    }>
-                                        <figure>
-                                            <img src={projects[i].project_img} alt=""/>
-                                        </figure>
-                                        <div className="project_heading">
-                                            {projects[i].project_name}
-                                        </div>
-                                        <div className="project_description">
-                                            {projects[i].project_description}
-                                        </div>
-                                    </div>
-                                    <div className="project2">
-                                        <div className="project_heading">
-                                            {projects[i + 1].project_name}
-
-                                        </div>
-                                        <div className="project_description">
-                                            {projects[i + 1].project_description}
-                                        </div>
-                                    </div>
-                                    <div className="project3">
-                                        <div className="project_heading">
-                                            {projects[i + 2].project_name}
-                                        </div>
-                                        <div className="project_description">{projects[i + 2].project_description}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="swiper-slide">
-                                <div className="project_container">
-                                    <div className="project1" onClick={() => {
-                                        setInfoCard(launchInfo())
                                     }
                                     }>
                                         <figure>
@@ -420,6 +373,19 @@ export const Page = () => {
                 </div>
             </div>
         </div>
-        {infoCard}
+        {/*<Information_container key={uuidv4()} props={{*/}
+        {/*    type: "project", tags: [{*/}
+        {/*        name: "",*/}
+        {/*        icon: <Python/>,*/}
+        {/*        link: ""*/}
+        {/*    }],*/}
+        {/*    gallery: [],*/}
+        {/*    projectHeading: {*/}
+        {/*        heading: "",*/}
+        {/*        link: ""*/}
+        {/*    },*/}
+        {/*    projectContent: [],*/}
+        {/*    footer: ""*/}
+        {/*}}/>*/}
     </>;
 }

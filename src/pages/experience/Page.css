@@ -356,11 +356,11 @@
 }
 
 .more .more_line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px solid var(--lines);
-    padding-bottom: 1rem;
-    margin-bottom: 6rem;
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px solid var(--lines);
+        padding-bottom: 1rem;
+        margin-bottom: 6rem;
 }
 
 .more .more_button {

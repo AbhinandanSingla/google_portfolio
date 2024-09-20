@@ -1,19 +1,20 @@
 import './top_header.css'
 import google_logo from '../../assets/top_header/google.png'
-import l from '../../assets/social media icons/skill-icons_twitter.svg';
 import {
     Contact_icon,
     Dotted_icon,
     LinkedIn_icon,
-    Menu_icon, Mobile_Menu_icon, Moon_icon,
+    Menu_icon,
+    Mobile_Menu_icon,
     Search_icon,
-    Setting_icon, Sun_icon,
+    Setting_icon,
     Twitter_icon,
     User_icon
 } from "./svg_exporter";
-import {useContext, useEffect, useState} from "react";
+import {useContext, useState} from "react";
 import {DarkModeContext} from "../../DarkMode";
 import user_icon from "../../assets/top_header/navbar/icon-park-solid_handle-a.png"
+import {DarkModeBox} from "./Components/DarkModeBox";
 
 export const Top_header = () => {
     const [darkMode, setDarkMode] = useContext(DarkModeContext);
@@ -46,28 +47,7 @@ export const Top_header = () => {
                             <Setting_icon onClick={() => setDarkBtn(!darkBtn)}
                                           color={darkMode ? 'white' : 'black'}/>
                             {
-                                darkBtn ? <div className={darkMode ? "setting_box dark_enabled" : "setting_box"}>
-                                        {
-                                            darkMode ?
-                                                <div className="button_container">
-                                    <span>
-                                        Light Color
-                                    </span>
-                                                    <div className={"button_ball"}>
-                                                        <Sun_icon onClick={() => setDarkMode(!darkMode)}/>
-                                                    </div>
-                                                </div> :
-                                                <div className="button_container">
-                                    <span>
-                                        Dark Color
-                                    </span>
-                                                    <div className={"button_ball"}>
-                                                        <Moon_icon onClick={() => setDarkMode(!darkMode)}/>
-                                                    </div>
-                                                </div>
-                                        }
-                                    </div>
-                                    : null
+                                darkBtn && <DarkModeBox/>
                             }
                         </figure>
                         <figure className="setting_icon">

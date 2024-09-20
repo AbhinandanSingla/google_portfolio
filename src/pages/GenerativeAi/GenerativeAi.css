@@ -1,0 +1,11 @@
+.generative_ai {
+  padding: 2rem 20rem;
+  background: linear-gradient(135deg, rgba(149, 147, 151, 0.17) 0%, rgba(115, 103, 240, 0.01) 25.81%);
+}
+.generative_ai .generative_list li {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  font-family: var(--open_sans);
+}
+
+/*# sourceMappingURL=GenerativeAi.css.map */

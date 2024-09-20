@@ -9,7 +9,6 @@ import {Page} from "../experience/experience";
 import instagram from '../home content/Assets/images/Rectangle 9.png';
 import {useEffect} from "react";
 import Swiper from 'swiper';
-import {Navigation, Pagination} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -18,10 +17,8 @@ import mobile_img1 from "../home content/Assets/mobile_images/Rectangle 44.png"
 import mobile_img2 from "../home content/Assets/mobile_images/Rectangle 45.png"
 import mobile_img3 from "../home content/Assets/mobile_images/Rectangle 46.png"
 import mobile_img4 from "../home content/Assets/mobile_images/Rectangle 47.png"
-import mobile_img5 from "../home content/Assets/mobile_images/Rectangle 48.png"
-import mobile_img6 from "../home content/Assets/mobile_images/Rectangle 49.png"
 import mobile_img7 from "../home content/Assets/mobile_images/Rectangle 50.png"
-
+import {GenerativeAi} from "../GenerativeAi/GenerativeAi";
 export const Overview = () => {
     useEffect(() => {
         const swiper = new Swiper('.swiper', {
@@ -48,11 +45,13 @@ export const Overview = () => {
 
     })
     return (<>
+        {/*<GenerativeAi/>*/}
         <div className="home_content ">
             <div className="max_width">
-                <div className="search_result_heading">
-                    Showing result for Abhinandan Singla
-                </div>
+                {/*<div className="search_result_heading">*/}
+                {/*    Showing result for Abhinandan Singla*/}
+                {/*</div>*/}
+
                 <div className="overview_container">
                     <div className="home_bar">
                         <div className="user_heading">
@@ -147,11 +146,8 @@ export const Overview = () => {
                             </div>
                         </div>
                     </div>
-
-
                 </div>
                 <Page/>
-
             </div>
         </div>
     </>)

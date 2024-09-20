@@ -11,7 +11,7 @@ export const Github_icon = (props) => {
 export const Gmail_icon = (props) => {
     return (<svg className={props.className} width="109" height="82" viewBox="0 0 109 82" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_49_51)">
+            <g clipPath="url(#clip0_49_51)">
                 <path
                     d="M24.7728 81.5964V39.5724L11.712 27.6493L0 21.0328V74.1803C0 78.2837 3.33174 81.5964 7.43201 81.5964H24.7728Z"
                     fill="#4285F4"/>
@@ -52,7 +52,7 @@ export const Linkedin_icon = (props) => {
 export const Twitter_icon = (props) => {
     return (<svg className={props.className} width="100" height="100" viewBox="0 0 100 100" fill="none"
                  xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_49_38)">
+            <g clipPath="url(#clip0_49_38)">
                 <path
                     d="M76.5625 0H23.4375C10.4933 0 0 10.4933 0 23.4375V76.5625C0 89.5067 10.4933 100 23.4375 100H76.5625C89.5067 100 100 89.5067 100 76.5625V23.4375C100 10.4933 89.5067 0 76.5625 0Z"
                     fill="white"/>
@@ -90,15 +90,15 @@ export const Instagram_icon = (props) => {
                 <radialGradient id="paint0_radial_49_33" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(25.7656 104.471) rotate(-90) scale(96.1342 89.4124)">
                     <stop stopColor="#FFDD55"/>
-                    <stop offset="0.1" stop-color="#FFDD55"/>
-                    <stop offset="0.5" stop-color="#FF543E"/>
-                    <stop offset="1" stop-color="#C837AB"/>
+                    <stop offset="0.1" stopColor="#FFDD55"/>
+                    <stop offset="0.5" stopColor="#FF543E"/>
+                    <stop offset="1" stopColor="#C837AB"/>
                 </radialGradient>
                 <radialGradient id="paint1_radial_49_33" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
                                 gradientTransform="translate(-16.2479 6.98741) rotate(78.681) scale(42.9725 177.134)">
-                    <stop stop-color="#3771C8"/>
-                    <stop offset="0.128" stop-color="#3771C8"/>
-                    <stop offset="1" stop-color="#6600FF" stop-opacity="0"/>
+                    <stop stopColor="#3771C8"/>
+                    <stop offset="0.128" stopColor="#3771C8"/>
+                    <stop offset="1" stopColor="#6600FF" stopOpacity="0"/>
                 </radialGradient>
                 <clipPath id="clip0_49_33">
                     <rect width="97" height="97" fill="white"/>

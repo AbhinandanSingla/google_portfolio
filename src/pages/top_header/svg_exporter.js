@@ -60,15 +60,15 @@ export const Search_icon = (props) => {
             <g clipPath="url(#clip0_17_947)">
                 <path
                     d="M5.88768 11.1198C8.78056 11.1198 11.1257 8.7747 11.1257 5.88182C11.1257 2.98894 8.78056 0.643799 5.88768 0.643799C2.9948 0.643799 0.649658 2.98894 0.649658 5.88182C0.649658 8.7747 2.9948 11.1198 5.88768 11.1198Z"
-                    stroke="black" stroke-width="0.820299" stroke-miterlimit="10"/>
+                    stroke="black" strokeWidth="0.820299" strokeMiterlimit="10"/>
                 <path d="M5.87962 11.1164C2.98693 11.1164 0.641602 8.77138 0.641602 5.87842" stroke="#39B54A"
-                      stroke-width="1.38602" stroke-miterlimit="10"/>
+                      strokeWidth="1.38602" strokeMiterlimit="10"/>
                 <path d="M0.641602 5.87974C0.641602 2.98679 2.98693 0.641724 5.87962 0.641724" stroke="#FBB03B"
-                      stroke-width="1.38602" stroke-miterlimit="10"/>
+                      strokeWidth="1.38602" strokeMiterlimit="10"/>
                 <path d="M5.87866 0.641724C8.77162 0.641724 11.1167 2.98679 11.1167 5.87974" stroke="#ED1C24"
-                      strokeWidth="1.38602" stroke-miterlimit="10"/>
+                      strokeWidth="1.38602" strokeMiterlimit="10"/>
                 <path d="M11.1167 5.87842C11.1167 8.77138 8.77162 11.1164 5.87866 11.1164" stroke="#0071BC"
-                      strokeWidth="1.38602" stroke-miterlimit="10"/>
+                      strokeWidth="1.38602" strokeMiterlimit="10"/>
                 <path d="M9.55908 9.60553L16.4816 15.8733" stroke="#0071BC" strokeWidth="1.66888"
                       strokeMiterlimit="10"/>
             </g>
@@ -113,13 +113,13 @@ export const Dotted_icon = (props) => {
                  xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M12.5 5.07812C13.1472 5.07812 13.6719 4.55346 13.6719 3.90625C13.6719 3.25904 13.1472 2.73438 12.5 2.73438C11.8528 2.73438 11.3281 3.25904 11.3281 3.90625C11.3281 4.55346 11.8528 5.07812 12.5 5.07812Z"
-                stroke="#4D5156" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                stroke="#4D5156" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             <path
                 d="M12.5 13.6719C13.1472 13.6719 13.6719 13.1472 13.6719 12.5C13.6719 11.8528 13.1472 11.3281 12.5 11.3281C11.8528 11.3281 11.3281 11.8528 11.3281 12.5C11.3281 13.1472 11.8528 13.6719 12.5 13.6719Z"
-                stroke="#4D5156" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                stroke="#4D5156" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             <path
                 d="M12.5 22.2656C13.1472 22.2656 13.6719 21.741 13.6719 21.0938C13.6719 20.4465 13.1472 19.9219 12.5 19.9219C11.8528 19.9219 11.3281 20.4465 11.3281 21.0938C11.3281 21.741 11.8528 22.2656 12.5 22.2656Z"
-                stroke="#4D5156" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                stroke="#4D5156" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
     )
 }
